@@ -1,6 +1,5 @@
 import React from 'react';
 import { Mail, Facebook, Instagram, Youtube } from 'lucide-react';
-import logoWhite from '@/assets/images/Budowalka-Logo-White.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +12,7 @@ const Footer: React.FC = () => {
             <div>
               <div className="mb-4">
                 <img 
-                  src={logoWhite} 
+                  src="/images/Budowalka-Logo-White.png" 
                   alt="Budowalka" 
                   className="h-8"
                 />
