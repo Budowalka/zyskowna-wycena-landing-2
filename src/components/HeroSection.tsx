@@ -78,9 +78,9 @@ const HeroSection: React.FC = () => {
               Policz stawkę w 20 min – 97 zł
             </a>
             
-            <div className="inline-block border-2 border-gray-800 rounded-full px-6 py-3 mt-4">
+            <div className="inline-block rounded-full px-6 py-3 mt-4">
               <div className="text-center">
-                <div className="text-lg font-bold mb-2">OFERTA WAŻNA DO</div>
+                <div className="text-lg font-bold mb-2">OFERTA WAŻNA...</div>
                 <div className="flex justify-center items-center space-x-6">
                   <div className="flex flex-col items-center">
                     <div className="text-4xl font-bold">{timeLeft.days}</div>
