@@ -1,8 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Check, X } from 'lucide-react';
 
 const PricingSection: React.FC = () => {
   const [isYearly, setIsYearly] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const fullPlanRef = useRef<HTMLDivElement>(null);
+  
+  // Sprawdzanie czy urządzenie jest mobilne
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768); // 768px to breakpoint dla md: w Tailwind
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
+  
+  // Przewijanie do pakietu "Pełny System" po wybraniu opcji rat na mobilnych urządzeniach
+  useEffect(() => {
+    if (isYearly && isMobile && fullPlanRef.current) {
+      // Dodanie małego opóźnienia dla lepszego UX
+      setTimeout(() => {
+        fullPlanRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    }
+  }, [isYearly, isMobile]);
   
   const plans = [
     {
@@ -108,6 +132,7 @@ const PricingSection: React.FC = () => {
             {plans.map((plan) => (
               <div 
                 key={plan.id} 
+                ref={plan.id === 'full' ? fullPlanRef : null}
                 className={`bg-white rounded-2xl overflow-hidden ${
                   plan.popular 
                     ? 'ring-4 ring-orange-500 shadow-2xl lg:-mt-6 lg:mb-6 relative z-20' 
