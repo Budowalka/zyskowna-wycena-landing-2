@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Facebook, Instagram, Youtube } from 'lucide-react';
-import logoWhite from '../assets/images/Budowalka-Logo-White.png';
+import logoWhite from '@/assets/images/Budowalka-Logo-White.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
