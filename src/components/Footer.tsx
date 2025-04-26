@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Facebook, Instagram, Youtube } from 'lucide-react';
 import logoWhite from '../assets/images/Budowalka-Logo-White.png';
 
 const Footer: React.FC = () => {
@@ -28,7 +28,9 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">FB</div>
+                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <Facebook size={20} />
+                  </div>
                 </a>
                 <a 
                   href="https://www.instagram.com/budowalka/" 
@@ -36,7 +38,9 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">IG</div>
+                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <Instagram size={20} />
+                  </div>
                 </a>
                 <a 
                   href="https://www.youtube.com/budowalka" 
@@ -44,7 +48,9 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">YT</div>
+                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <Youtube size={20} />
+                  </div>
                 </a>
               </div>
             </div>
