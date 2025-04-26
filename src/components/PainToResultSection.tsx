@@ -10,7 +10,7 @@ const PainToResultSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl font-semibold text-blue-600 mb-4 text-center">
-            Tracisz 4h tygodniowo i 17% marży – zobacz dlaczego
+            Tracisz 4 h/tydz. i średnio 17 % marży – zobacz dlaczego
           </h2>
           
           <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">
@@ -47,7 +47,7 @@ const PainToResultSection: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Spójność</h3>
               <p className="text-gray-600">
-                Nigdy nie masz pewności, czy wszystkie materiały i prace zostały uwzględnione w wycenie
+                7 z 10 firm zapomina o kosztach pośrednich. Nigdy nie masz pewności, czy wszystkie materiały i prace zostały uwzględnione w wycenie
               </p>
             </div>
           </div>

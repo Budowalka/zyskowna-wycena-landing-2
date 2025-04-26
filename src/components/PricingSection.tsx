@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Check, X } from 'lucide-react';
+import { Check, X, Shield } from 'lucide-react';
 
 const PricingSection: React.FC = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -36,19 +36,18 @@ const PricingSection: React.FC = () => {
       popular: false,
       features: [
         { id: 1, text: '40-min szkolenie "Rzeczywista stawka"', included: true },
-        { id: 2, text: 'Excel-kalkulator', included: true },
         { id: 3, text: 'Kompletny system 4 modułów', included: false },
         { id: 4, text: 'Dodatkowe 5 narzędzi (wartość 2500 zł)', included: false },
         { id: 5, text: '30 dni wsparcia (Slack/Q&A)', included: false },
         { id: 6, text: 'Zwrot po 1-2 projektach', included: false },
-        { id: 7, text: 'Gwarancja 14 dni', included: false },
+        { id: 7, text: 'Gwarancja 14 dni', included: true },
         { id: 8, text: '4h wspólnej konfiguracji', included: false },
         { id: 9, text: 'Audyt kosztów', included: false },
         { id: 10, text: '1 termin/tydzień', included: false },
       ],
       ctaText: 'Odblokuj za 97 zł',
       ctaLink: 'https://easl.ink/3UC8E',
-      ctaColor: 'bg-gray-500 hover:bg-gray-600'
+      ctaColor: 'bg-[#FF6B00] hover:bg-orange-700'
     },
     {
       id: 'full',
@@ -57,7 +56,6 @@ const PricingSection: React.FC = () => {
       popular: true,
       features: [
         { id: 1, text: '40-min szkolenie "Rzeczywista stawka"', included: true },
-        { id: 2, text: 'Excel-kalkulator', included: true },
         { id: 3, text: 'Kompletny system 4 modułów', included: true },
         { id: 4, text: 'Dodatkowe 5 narzędzi (wartość 2500 zł)', included: true },
         { id: 5, text: '30 dni wsparcia (Slack/Q&A)', included: true },
@@ -74,19 +72,19 @@ const PricingSection: React.FC = () => {
     {
       id: 'consulting',
       name: 'Pełne wdrożenie',
+      subtitle: '4 h sesji | 1-na-1 | live-screen-share',
       price: '2900',
       popular: false,
       features: [
         { id: 1, text: '40-min szkolenie "Rzeczywista stawka"', included: true },
-        { id: 2, text: 'Excel-kalkulator', included: true },
         { id: 3, text: 'Kompletny system 4 modułów', included: true },
         { id: 4, text: 'Dodatkowe 5 narzędzi (wartość 2500 zł)', included: true },
         { id: 5, text: '30 dni wsparcia (Slack/Q&A)', included: true },
         { id: 6, text: 'Zwrot po 1-2 projektach', included: true },
         { id: 7, text: 'Gwarancja 14 dni', included: true },
-        { id: 8, text: '4h wspólnej konfiguracji', included: true },
-        { id: 9, text: 'Audyt kosztów', included: true },
-        { id: 10, text: '1 termin/tydzień', included: true },
+        { id: 8, text: 'Analiza Twoich kosztów → pre-loaded kalkulator', included: true },
+        { id: 9, text: 'Wsparcie przy budowie biblioteki komponentów', included: true },
+        { id: 10, text: 'Pełne wdrożenie systemu', included: true },
       ],
       ctaText: 'Rezerwuję termin',
       ctaLink: 'https://easl.ink/miTwG',
@@ -148,6 +146,10 @@ const PricingSection: React.FC = () => {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
                   
+                  {plan.subtitle && (
+                    <p className="text-gray-600 mb-4">{plan.subtitle}</p>
+                  )}
+                  
                   <div className="mb-6">
                     <div className="flex items-end gap-1">
                       <span className="text-4xl font-bold">
@@ -192,7 +194,17 @@ const PricingSection: React.FC = () => {
                     rel="noopener noreferrer"
                     className={`block w-full py-3 px-6 text-center text-white font-semibold rounded-lg transition ${plan.ctaColor} ${plan.popular ? 'transform hover:scale-105' : ''}`}
                   >
-                    {plan.ctaText}
+                    {plan.id === 'starter' ? (
+                      <div className="flex items-center justify-center">
+                        <span>{plan.ctaText}</span>
+                        <div className="ml-2 bg-white/20 rounded-full px-2 py-1 text-xs flex items-center">
+                          <Shield className="w-3 h-3 mr-1" />
+                          14 dni zwrotu
+                        </div>
+                      </div>
+                    ) : (
+                      plan.ctaText
+                    )}
                   </a>
                 </div>
               </div>

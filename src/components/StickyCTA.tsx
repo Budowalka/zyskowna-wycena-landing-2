@@ -33,12 +33,12 @@ const StickyCTA: React.FC = () => {
           </div>
           
           <a
-            href="https://easl.ink/3UC8E"
+            href="https://easl.ink/TNDXx"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-full font-medium transition transform hover:scale-105 whitespace-nowrap"
+            className="bg-[#FF6B00] hover:bg-orange-700 text-white py-2 px-6 rounded-full font-medium transition transform hover:scale-105 whitespace-nowrap"
           >
-            Odblokuj teraz
+            Wycena w 15 min – Start
           </a>
         </div>
       </div>
