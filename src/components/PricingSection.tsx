@@ -49,7 +49,7 @@ const PricingSection: React.FC = () => {
     },
     {
       id: 'consulting',
-      name: 'Consulting DWY',
+      name: 'Pełne wdrożenie',
       price: '2900',
       popular: false,
       features: [

@@ -62,7 +62,7 @@ const BonusesSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Bonusy – tylko dla planu 1497 zł
+            Bonusy – od planu 1497 zł
           </h2>
           
           <div className="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 transition-all duration-300">

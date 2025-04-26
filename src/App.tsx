@@ -1,8 +1,6 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import PainToResultSection from './components/PainToResultSection';
-import SocialProofSection from './components/SocialProofSection';
 import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 import BonusesSection from './components/BonusesSection';
@@ -17,7 +15,6 @@ function App() {
       <main>
         <HeroSection />
         <PainToResultSection />
-        <SocialProofSection />
         <FeaturesSection />
         <PricingSection />
         <BonusesSection />
