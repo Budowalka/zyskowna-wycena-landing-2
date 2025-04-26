@@ -5,6 +5,7 @@ import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 import BonusesSection from './components/BonusesSection';
 import GuaranteeSection from './components/GuaranteeSection';
+import SocialProofSection from './components/SocialProofSection';
 import Footer from './components/Footer';
 import StickyCTA from './components/StickyCTA';
 
@@ -16,6 +17,7 @@ function App() {
         <HeroSection />
         <PainToResultSection />
         <FeaturesSection />
+        <SocialProofSection />
         <PricingSection />
         <BonusesSection />
         <GuaranteeSection />

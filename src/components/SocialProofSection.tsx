@@ -11,21 +11,31 @@ const SocialProofSection: React.FC = () => {
     { id: 5, name: "Company 5" },
   ];
   
-  // Mock data for testimonials
+  // Real testimonials
   const testimonials = [
     {
       id: 1,
-      text: "Wycena skrócona z 4h do 25 min, marża wzrosła o 15%. System już po pierwszym projekcie się zwrócił.",
-      author: "Marek K.",
-      company: "firma remontowa (8 osób)",
-      avatar: "https://randomuser.me/api/portraits/men/1.jpg"
+      text: "Pieniądze 💰 wydane na współpracę z Piotrem to bardzo dobra inwestycja. Pokazał mi, jak łatwo pilnować budżetu. Teraz dokładnie wiem, ile mam zysku z projektu i nie tracę czasu na rozliczanie pracowników – wszystko robi się automatycznie.",
+      author: "Krystian Piątek",
+      company: ""
     },
     {
       id: 2,
-      text: "Przestałem się zastanawiać, czy wszystko policzyłem. Wyceniam szybciej o 80% i klienci dostają oferty dokładnie wtedy, kiedy obiecuję.",
-      author: "Adam W.",
-      company: "wykończenia wnętrz (5 osób)",
-      avatar: "https://randomuser.me/api/portraits/men/2.jpg"
+      text: "Współpraca uświadomiła mi, jak obliczać realny zysk i marże, co wliczać w koszty i jak mierzyć wydajność. Wnioski? Moje prace były bardzo zaniżone.",
+      author: "Rafał Sadecki",
+      company: ""
+    },
+    {
+      id: 3,
+      text: "To jest super! Moja firma jest dobrym przykładem na to, że system Piotra naprawdę działa i oszczędza obecnie mnóstwo czasu.",
+      author: "Marius Venckus",
+      company: ""
+    },
+    {
+      id: 4,
+      text: "Dzięki rozwiązaniom Piotra zyskałem kontrolę nad firmą. Nauczyłem się efektywnie zbierać dane finansowe. Inwestycja zwróciła się bardzo szybko w postaci dużo większej ilości wolnego czasu.",
+      author: "Adrian Seifert",
+      company: ""
     }
   ];
 
@@ -33,19 +43,22 @@ const SocialProofSection: React.FC = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          {/* Logo Bar */}
-          <div className="mb-16">
+          {/* Logo Bar - Can be uncommented when real logos are available */}
+          {/* <div className="mb-16">
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               {companyLogos.map(logo => (
                 <div key={logo.id} className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                  {/* Placeholder for actual company logos */}
                   <div className="w-32 h-12 bg-gray-200 rounded flex items-center justify-center">
                     <span className="text-gray-500 font-medium">{logo.name}</span>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Co mówią użytkownicy
+          </h2>
           
           {/* Testimonials */}
           <div className="grid md:grid-cols-2 gap-8">
@@ -64,19 +77,14 @@ const SocialProofSection: React.FC = () => {
                 </div>
                 
                 {/* Testimonial text */}
-                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-4">{testimonial.text}</p>
                 
                 {/* Author info */}
-                <div className="flex items-center">
-                  <img 
-                    src={testimonial.avatar} 
-                    alt={testimonial.author} 
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <p className="font-bold text-gray-900">{testimonial.author}</p>
+                <div>
+                  <p className="font-bold text-gray-900">{testimonial.author}</p>
+                  {testimonial.company && (
                     <p className="text-sm text-gray-600">{testimonial.company}</p>
-                  </div>
+                  )}
                 </div>
               </div>
             ))}
