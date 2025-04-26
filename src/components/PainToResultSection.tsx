@@ -56,14 +56,19 @@ const PainToResultSection: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Before */}
             <div className="relative overflow-hidden rounded-xl shadow-lg group">
-              <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/90"></div>
               <div className="aspect-[4/3] bg-gray-200">
                 <div className="w-full h-full bg-gray-800 p-6 flex items-center justify-center">
-                  <div className="grid grid-cols-5 gap-2 w-full max-w-xs opacity-60">
+                  {/* <div className="grid grid-cols-5 gap-2 w-full max-w-xs opacity-60">
                     {Array(20).fill(0).map((_, i) => (
                       <div key={i} className="h-4 bg-gray-600 rounded"></div>
                     ))}
-                  </div>
+                  </div> */}
+                  <img 
+                    src="/src/assets/images/messy-excel.png" 
+                    alt="Chaotyczny Excel przed wdrożeniem systemu" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -80,7 +85,7 @@ const PainToResultSection: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/60"></div>
               <div className="aspect-[4/3] bg-gray-200">
                 <div className="w-full h-full bg-white p-6 flex flex-col items-center justify-center">
-                  <div className="w-full mb-4">
+                  {/* <div className="w-full mb-4">
                     <div className="h-8 bg-blue-600 rounded w-full mb-2"></div>
                     <div className="grid grid-cols-2 gap-2 w-full">
                       <div className="h-4 bg-gray-200 rounded"></div>
@@ -91,9 +96,15 @@ const PainToResultSection: React.FC = () => {
                     {Array(9).fill(0).map((_, i) => (
                       <div key={i} className="h-12 bg-gray-100 rounded shadow-sm"></div>
                     ))}
-                  </div>
-                </div>
+                  </div> */}
+                  <img 
+                  src="/src/assets/images/nice-pdf.png" 
+                  alt="Profesjonalny PDF po wdrożeniu systemu" 
+                  className="w-full h-full object-contain"
+                />
               </div>
+                </div>
+
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold">PO</span>

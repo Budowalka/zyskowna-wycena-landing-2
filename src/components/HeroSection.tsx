@@ -51,8 +51,7 @@ const HeroSection: React.FC = () => {
             Wycena w 15 min — zero niedoszacowań
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
-            System dla ekip 2–30 osób.
-            Oferta wysłana następnego dnia (zgodnie z obietnicą), nie 3 tygodnie później.
+            <strong>Oferta wysłana do klienta zgodnie z obietnicą</strong>, a nie 3 tygodnie później... lub nigdy.
           </p>
           
           {/* Video Section */}
