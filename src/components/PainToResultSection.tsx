@@ -65,7 +65,7 @@ const PainToResultSection: React.FC = () => {
                     ))}
                   </div> */}
                   <img 
-                    src="/src/assets/images/messy-excel.png" 
+                    src="/images/messy-excel.png" 
                     alt="Chaotyczny Excel przed wdrożeniem systemu" 
                     className="w-full h-full object-contain"
                   />
@@ -98,7 +98,7 @@ const PainToResultSection: React.FC = () => {
                     ))}
                   </div> */}
                   <img 
-                  src="/src/assets/images/nice-pdf.png" 
+                  src="/images/nice-pdf.png" 
                   alt="Profesjonalny PDF po wdrożeniu systemu" 
                   className="w-full h-full object-contain"
                 />
