@@ -127,7 +127,7 @@ const PricingSection: React.FC = () => {
                     <div className="flex items-end gap-1">
                       <span className="text-4xl font-bold">
                         {isYearly && plan.id === 'full' ? '549' : 
-                         isYearly && plan.id === 'consulting' ? '1150' : plan.price}
+                         isYearly && plan.id === 'consulting' ? '1100' : plan.price}
                       </span>
                       <span className="text-gray-600 mb-1">zł</span>
                       {isYearly && (plan.id === 'full' || plan.id === 'consulting') && (
@@ -141,7 +141,7 @@ const PricingSection: React.FC = () => {
                     )}
                     {isYearly && plan.id === 'consulting' && (
                       <div className="text-sm text-gray-500 mt-1">
-                        Łącznie: 3450 zł
+                        Łącznie: 3300 zł
                       </div>
                     )}
                   </div>
