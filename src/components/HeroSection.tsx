@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
           <div className="max-w-3xl mx-auto mb-12 relative rounded-2xl shadow-xl overflow-hidden">
             <div className="aspect-video">
               <iframe
-                src="https://player.vimeo.com/video/1078937332/78b7c5ea2f"
+                src="https://player.vimeo.com/video/1078937332?share=copy"
                 className="w-full h-full"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
@@ -78,16 +78,27 @@ const HeroSection: React.FC = () => {
               Policz stawkę w 20 min – 97 zł
             </a>
             
-            <div className="flex items-center space-x-2 text-sm">
-              <span className="text-orange-700 font-medium">Oferta ważna do:</span>
-              <div className="flex items-center space-x-1">
-                <span className="bg-gray-100 px-1.5 py-0.5 rounded">{timeLeft.days}d</span>
-                <span>:</span>
-                <span className="bg-gray-100 px-1.5 py-0.5 rounded">{String(timeLeft.hours).padStart(2, '0')}h</span>
-                <span>:</span>
-                <span className="bg-gray-100 px-1.5 py-0.5 rounded">{String(timeLeft.minutes).padStart(2, '0')}m</span>
-                <span>:</span>
-                <span className="bg-gray-100 px-1.5 py-0.5 rounded">{String(timeLeft.seconds).padStart(2, '0')}s</span>
+            <div className="inline-block border-2 border-gray-800 rounded-full px-6 py-3 mt-4">
+              <div className="text-center">
+                <div className="text-lg font-bold mb-2">OFERTA WAŻNA DO</div>
+                <div className="flex justify-center items-center space-x-6">
+                  <div className="flex flex-col items-center">
+                    <div className="text-4xl font-bold">{timeLeft.days}</div>
+                    <div className="text-sm">dni</div>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <div className="text-4xl font-bold">{String(timeLeft.hours).padStart(2, '0')}</div>
+                    <div className="text-sm">godz</div>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <div className="text-4xl font-bold">{String(timeLeft.minutes).padStart(2, '0')}</div>
+                    <div className="text-sm">min</div>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <div className="text-4xl font-bold">{String(timeLeft.seconds).padStart(2, '0')}</div>
+                    <div className="text-sm">sek</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
