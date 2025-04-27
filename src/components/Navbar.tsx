@@ -38,12 +38,12 @@ const Navbar: React.FC = () => {
             </ul>
           </nav>
           <a 
-            href="https://easl.ink/3UC8E"
+            href="https://easl.ink/TNDXx"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-full font-medium transition transform hover:scale-105"
           >
-            Policz stawkę
+            System wyceny
           </a>
         </div>
         
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
                   className="block bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-full font-medium text-center transition"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Policz stawkę
+                  System wyceny
                 </a>
               </li>
             </ul>

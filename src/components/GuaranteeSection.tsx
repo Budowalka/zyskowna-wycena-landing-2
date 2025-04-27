@@ -18,12 +18,7 @@ const GuaranteeSection: React.FC = () => {
     {
       id: 3,
       question: "Czy mogę rozłożyć płatność na raty?",
-      answer: "Tak, oferujemy możliwość płatności w 3 ratach po 549 zł (łącznie 1647 zł) dla planu \"Pełny System\"."
-    },
-    {
-      id: 4,
-      question: "Czy cena Startera (97 zł) odlicza się od ceny pełnego systemu?",
-      answer: "Tak, jeśli zdecydujesz się na zakup pełnego systemu w ciągu 30 dni od zakupu Startera, jego cena zostanie w całości odliczona od kosztu pełnego systemu."
+      answer: "Tak, oferujemy możliwość płatności w 3 ratach po 549 zł (łącznie 1647 zł) dla planu \"System Zyskowna Wycena\"."
     }
   ];
 

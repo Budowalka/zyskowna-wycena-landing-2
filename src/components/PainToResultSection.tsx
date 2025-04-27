@@ -121,7 +121,7 @@ const PainToResultSection: React.FC = () => {
               href="#cennik"
               className="bg-orange-500 hover:bg-orange-600 text-white text-lg py-4 px-10 rounded-full font-semibold transition transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
             >
-              Policz stawkę w 20 min – 97 zł
+              System Zyskowna Wycena - pakiet za 1497 zł
             </a>
           </div>
         </div>

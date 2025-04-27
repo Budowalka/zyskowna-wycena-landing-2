@@ -30,28 +30,8 @@ const PricingSection: React.FC = () => {
   
   const plans = [
     {
-      id: 'starter',
-      name: 'Starter',
-      price: '97',
-      popular: false,
-      features: [
-        { id: 1, text: '40-min szkolenie "Rzeczywista stawka"', included: true },
-        { id: 3, text: 'Kompletny system 4 modułów', included: false },
-        { id: 4, text: 'Dodatkowe 5 narzędzi (wartość 2500 zł)', included: false },
-        { id: 5, text: '30 dni wsparcia (Slack/Q&A)', included: false },
-        { id: 6, text: 'Zwrot po 1-2 projektach', included: false },
-        { id: 7, text: 'Gwarancja 14 dni', included: true },
-        { id: 8, text: '4h wspólnej konfiguracji', included: false },
-        { id: 9, text: 'Audyt kosztów', included: false },
-        { id: 10, text: '1 termin/tydzień', included: false },
-      ],
-      ctaText: 'Odblokuj za 97 zł',
-      ctaLink: 'https://easl.ink/3UC8E',
-      ctaColor: 'bg-[#FF6B00] hover:bg-orange-700'
-    },
-    {
       id: 'full',
-      name: 'Pełny System',
+      name: 'System Zyskowna Wycena',
       price: '1497',
       popular: true,
       features: [
@@ -104,7 +84,7 @@ const PricingSection: React.FC = () => {
             Wybierz odpowiedni plan
           </h2>
           <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Zacznij od podstaw lub wdróż kompletny system oszczędzający czas i zwiększający marżę
+            Wdróż System Zyskowna Wycena - samodzielnie lub z moją pomocą
           </p>
           
           {/* Pricing Toggle */}
@@ -126,7 +106,7 @@ const PricingSection: React.FC = () => {
           </div>
           
           {/* Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {plans.map((plan) => (
               <div 
                 key={plan.id} 
@@ -194,17 +174,7 @@ const PricingSection: React.FC = () => {
                     rel="noopener noreferrer"
                     className={`block w-full py-3 px-6 text-center text-white font-semibold rounded-lg transition ${plan.ctaColor} ${plan.popular ? 'transform hover:scale-105' : ''}`}
                   >
-                    {plan.id === 'starter' ? (
-                      <div className="flex items-center justify-center">
-                        <span>{plan.ctaText}</span>
-                        <div className="ml-2 bg-white/20 rounded-full px-2 py-1 text-xs flex items-center">
-                          <Shield className="w-3 h-3 mr-1" />
-                          14 dni zwrotu
-                        </div>
-                      </div>
-                    ) : (
-                      plan.ctaText
-                    )}
+                    {plan.ctaText}
                   </a>
                 </div>
               </div>

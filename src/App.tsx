@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import PainToResultSection from './components/PainToResultSection';
+import ModulesSection from './components/ModulesSection';
 import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 import BonusesSection from './components/BonusesSection';
@@ -16,6 +17,7 @@ function App() {
       <main>
         <HeroSection />
         <PainToResultSection />
+        <ModulesSection />
         <FeaturesSection />
         <SocialProofSection />
         <PricingSection />

@@ -69,12 +69,12 @@ const HeroSection: React.FC = () => {
           {/* CTA Section */}
           <div className="flex flex-col items-center space-y-4">
             <a
-              href="https://easl.ink/3UC8E"
+              href="https://easl.ink/TNDXx"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-orange-500 hover:bg-orange-600 text-white text-lg md:text-xl py-4 px-10 rounded-full font-semibold transition transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Policz stawkę w 20 min – 97 zł
+              System Zyskowna Wycena - pakiet za 1497 zł
             </a>
             
             <div className="inline-block rounded-full px-6 py-3 mt-4">
